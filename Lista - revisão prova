@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+
+int main ()
+{
+     float c, m1, m2;
+    int anos = 0;
+
+        printf ("Entre com o crescimento (x%%): ");
+		scanf ("%f", &c);
+		
+		c = c/100;
+		
+        printf ("Entre com a produção anual: ");
+		scanf ("%f", &m1);
+	m2 = m1*2;
+   do
+	{
+		m1 = m1 + (m1*c);
+		anos++;
+	}
+	while (m1 < m2);
+    
+    printf ("Sua produção anual dobrará em %d anos", anos);
+    
+return 0;
+}

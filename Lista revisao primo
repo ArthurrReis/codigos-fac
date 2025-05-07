@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+    
+    int n, i, m=0, r;
+    
+    printf("Escreva um numero: ");
+    scanf ("%d", &n);
+        for (i=1;i<=n;i++){
+            r = n% i;
+            printf ("%d\n", r);
+        
+         if (r== 0)
+         {
+        m++;
+        printf("%d\n",m);
+         }
+        }
+   if (m == 2)
+   {
+       printf("Seu numero e primo!");}
+      else 
+          printf("Seu numero nao e primo");
+   }
+   
